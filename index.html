@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Carolyn Ann Lim</title>
+        <meta name="description" content="">
+        <meta name="author" content="Carolyn Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <!-- ***************************   NAVBAR  *****************************-->
+        <ul class="nav">
+            <nav>
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Photos</a>
+                <ul class="fallback">
+                <li><a href="#people">People</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#things">Things</a></li>
+                </ul>
+            </li>
+            <li><a href="#projects">Projects</a></li>
+            </nav>
+        </ul>
+
+         <!-- ***************************   ABOUT  *****************************-->
+        <p>Hi! I'm Carolyn Lim, a junior at the University of Pennsylvania double-majoring in Economics & Computer Science. Photography makes me happy - I'm a former photo editor at <a href="http://thedp.com">The Daily Pennsylvanian</a> & <a href="http://stampedmag.com">Stamped Magazine</a>, & am currently <a href="mailto:carolim@sas.upenn.edu">available</a> for freelance jobs. In my free time, I like to find cool music, play tennis, and travel around this beautiful world. </p>
+
+        <ul class="social">
+            <a href="http://www.github.com/carolim" rel="tooltip" title="code"><li class="github"></li></a>
+            <a href="http://twitter.com/wedontneedears" rel="tooltip" title="tweets"><li class="twitter"></li></a>
+            <a href="http://wedontneedears.tumblr.com" rel="tooltip" title="tumblr"><li class="tumblr"></li></a>
+            <a href="mailto:carolim@sas.upenn.edu" rel="tooltip" title="contact"><li class="email"></li></a>
+        </ul>
+
+
+         <!-- ***************************   PHOTOGRAPHY  *****************************--> 
+
+         <div id="gallery">
+        <img data-src="img/photos/people/people-1.jpg" />
+        <img data-src="img/photos/people/people-3.jpg" />
+        <img data-src="img/photos/people/people-4.jpg" />
+        <img data-src="img/photos/people/people-5.jpg" />
+        <img data-src="img/photos/people/people-2.jpg" />
+        </div>
+
+         <!-- ***************************   PROJECTS  *****************************--> 
+         <h2><a href="http://https://github.com/carolim/snake_game">Snake, Revisited</a></h2>
+         <p>A reimagined version of snake, built using the Java Swing Library.</p>
+         <img src="img/projects/snake-1.png"><img src="img/projects/snake-2.png">
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- portfoliojs (unified with all dependencies) -->
+        <script src="js/gallery/portfolio.pack.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+
+
+            $(document).ready(function() {
+            var p = $("#gallery").portfolio();
+            p.init();
+
+            $('nav li ul').hide().removeClass('fallback');
+            $('nav li').hover(
+              function () {
+                $('ul', this).stop().slideDown(100);
+              },
+              function () {
+                $('ul', this).stop().slideUp(100);
+              }
+            );
+
+    });
+        </script>
+    </body>
+</html>
