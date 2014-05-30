@@ -19,10 +19,27 @@ textarea {
     text-align: center;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
+
+html { 
+  font-size: 1em;
+  line-height: 1.4;
 }
+
+body {
+    font-family:'PT Mono', serif;
+    font-weight: 400;
+}
+
+p {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -98,9 +115,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.nav {
-    
+.navblock#aboutme {
 }
+
+.social li { 
+    display:inline;
+    float:left;
+ }
+
+.social li a {
+    display:block;
+    width:48px; 
+    height:48px; 
+    position:relative;
+}
+
+.social li a strong {
+    position:absolute; 
+    left:20px; 
+    top:-1px;
+    text-shadow:1px 1px 0 
+    rgba(0, 0, 0, 0.75); 
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius:3px; 
+    box-shadow: 0 0 5px 
+    rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * To edit: link file paths properly so image icons show up D:
+ */
+li.facebook { background-image:url('../img/icons/fb-icon.png'); }
+
 
 /* ==========================================================================
    Helper classes

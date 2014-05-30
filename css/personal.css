@@ -1,0 +1,80 @@
+
+div.full-page {
+    width:100%;
+}
+
+
+#aboutme, #photography, #projects {
+  margin-bottom: 90px;
+  margin-top: 90px;
+  padding-top: 100px;
+  postion:relative;
+}
+
+#title {
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  width: 860px;
+}
+
+ #title h1 {
+  font-style: bold;
+  letter-spacing: 2px;
+  font-size: 130px;
+  text-align: left;
+  padding-top: 15px;
+  color: #black;
+  font: bold 164px/1 "oswald";
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#title h1:nth-child(1) {
+      left: 0px;
+}
+
+#title h1:nth-child(2) {
+      top: 160px;
+      text-align: center;
+      padding-left: 80px; 
+}
+
+#title ul {
+  padding-top: 450px;
+  padding-left: 430px;
+}
+
+
+#text {
+    font-size: 15px;
+}
+
+
+#aboutme h1, #photography h1, #projects h1 {
+  font-style: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #black;
+  font: bold 75px/1 "oswald";
+  position: relative;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #000;
+    border-bottom:2px solid #000;
+    background-color: #FFFF00;
+}
+
+a:hover {
+    background-color: #FFF;
+    opacity: 0.5;
+}

@@ -11,8 +11,14 @@
         <meta name="author" content="Carolyn Lim">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/personal.css">
+
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -21,49 +27,56 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-         <!-- ***************************   NAVBAR  *****************************-->
-        <ul class="nav">
-            <nav>
-            <li><a href="#about">About</a></li>
-            <li><a href="#photos">Photos</a>
-                <ul class="fallback">
-                <li><a href="#people">People</a></li>
-                <li><a href="#places">Places</a></li>
-                <li><a href="#things">Things</a></li>
-                </ul>
-            </li>
-            <li><a href="#projects">Projects</a></li>
-            </nav>
-        </ul>
 
-         <!-- ***************************   ABOUT  *****************************-->
-        <p>Hi! I'm Carolyn Lim, a junior at the University of Pennsylvania double-majoring in Economics & Computer Science. Photography makes me happy - I'm a former photo editor at <a href="http://thedp.com">The Daily Pennsylvanian</a> & <a href="http://stampedmag.com">Stamped Magazine</a>, & am currently <a href="mailto:carolim@sas.upenn.edu">available</a> for freelance jobs. In my free time, I like to find cool music, play tennis, and travel around this beautiful world. </p>
+         <!-- ***************************   HEADER  *****************************-->
+        <div class="full-page" id="header">
+                <div id="title">
+                <h1>CAROLYN</h1> <h1>ANN LIM</h1><br>
 
-        <ul class="social">
-            <a href="http://www.github.com/carolim" rel="tooltip" title="code"><li class="github"></li></a>
-            <a href="http://twitter.com/wedontneedears" rel="tooltip" title="tweets"><li class="twitter"></li></a>
-            <a href="http://wedontneedears.tumblr.com" rel="tooltip" title="tumblr"><li class="tumblr"></li></a>
-            <a href="mailto:carolim@sas.upenn.edu" rel="tooltip" title="contact"><li class="email"></li></a>
-        </ul>
-
-
-         <!-- ***************************   PHOTOGRAPHY  *****************************--> 
-
-         <div id="gallery">
-        <img data-src="img/photos/people/people-1.jpg" />
-        <img data-src="img/photos/people/people-3.jpg" />
-        <img data-src="img/photos/people/people-4.jpg" />
-        <img data-src="img/photos/people/people-5.jpg" />
-        <img data-src="img/photos/people/people-2.jpg" />
+        <!-- ***************************   NAVBAR  *****************************-->
+            <ul id = "nav">
+            <a href="#about" class="smoothScroll">ABOUT</a> |
+            <a href="#photos" class="smoothScroll">PHOTOGRAPHY</a> |
+            <a href="#projects" class="smoothScroll">PROJECTS</a>
+            </ul>
         </div>
 
+        <!-- ***************************   ABOUT ME *****************************-->
+        <div id="aboutme">
+            <a name="about"></a>
+            <h1>about</h1>
+            <img src ="img/carolyn.jpg" height="250" width="250"><br>
+
+            <div id="text">
+            <p> I'm Carolyn Lim, a junior at the University of Pennsylvania. I'm currently double-majoring in Economics & Computer Science. Photography makes me happy - I'm a former photo editor at <a href="http://thedp.com">The Daily Pennsylvanian</a> & <a href="http://stampedmag.com">Stamped Magazine</a>, & am currently <a href="mailto:carolim@sas.upenn.edu">available</a> for freelance jobs. In my free time, I like to find cool music, play tennis, and travel around this beautiful world. <br>
+
+            blah blah blah </p>
+            </div>
+        </div>
+
+         <!-- ***************************   PHOTOGRAPHY  *****************************--> 
+         <div id="photography">
+         <a name="photos"></a>
+         <h1>Photography</h1>
+            <div id="gallery">
+                <img data-src="img/photos/people/people-1.jpg" />
+                <img data-src="img/photos/people/people-3.jpg" />
+                <img data-src="img/photos/people/people-4.jpg" />
+                <img data-src="img/photos/people/people-5.jpg" />
+                <img data-src="img/photos/people/people-2.jpg" />
+        </div></div>
+
          <!-- ***************************   PROJECTS  *****************************--> 
-         <h2><a href="http://https://github.com/carolim/snake_game">Snake, Revisited</a></h2>
-         <p>A reimagined version of snake, built using the Java Swing Library.</p>
-         <img src="img/projects/snake-1.png"><img src="img/projects/snake-2.png">
+         <div id="projects">
+         <a name="projects"></a>
+         <h1>Projects</h1>
+             <h2><a href="http://https://github.com/carolim/snake_game">Snake, Revisited</a></h2>
+             <p>A reimagined version of snake, built using the Java Swing Library.</p>
+             <img src="img/projects/snake-1.png"><img src="img/projects/snake-2.png">
+        </div>
 
 
-
+         <!-- ***************************   OTHER STUFF  *****************************-->          
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -81,6 +94,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
 
+            /*
+             * JS for horizontal scrolling gallery 
+             */
 
             $(document).ready(function() {
             var p = $("#gallery").portfolio();
@@ -95,6 +111,13 @@
                 $('ul', this).stop().slideUp(100);
               }
             );
+
+            /*
+             * JS for full screen divs 
+             */
+            vpw = $(window).width();
+            vph = $(window).height();
+            $('.full-page').height(vph);
 
     });
         </script>
