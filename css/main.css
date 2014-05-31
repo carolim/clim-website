@@ -31,8 +31,9 @@ body {
 }
 
 p {
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 

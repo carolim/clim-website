@@ -18,13 +18,10 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/personal.css">
-        <link rel="stylesheet" href="src/css/swipebox.css">
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.2/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="src/js/jquery.swipebox.js"></script>
-
 
 
     </head>
@@ -59,6 +56,11 @@
 
             <a href="https://www.dropbox.com/s/9qc1if0kcqiv6wq/resume_carolyn.pdf">Download a copy of my resume here.</a>
 
+            <br><br>
+
+            <div id="social"><a href="http://facebook.com/wedontneedears"><img src="img/icons/fb-icon.png"/ width="35" height="35"></a><a href="http://instagram.com/muddymire"><img src="img/icons/insta-icon.png"/ width="35" height="35"></a><a href="http://wedontneedears.tumblr.com"><img src="img/icons/tumblr-icon.png"/ width="35" height="35"></a><a href=""><img src="img/icons/linkedin-icon.png"/ width="35" height="35"></a></div>     
+            </div>
+
             </div>
         </div>
 
@@ -67,35 +69,33 @@
          <a name="photos"></a>
          __________________________________________________________
          <h1>Photography</h1>
-             <a href="img/photos/people/people-1.jpg" class="swipebox">
-            <img src="img/photos/people/people-1-thumb.jpg" alt="image">
-            </a>
 
-            <a href="img/photos/people/people-2.jpg" class="swipebox">
-            <img src="img/photos/people/people-2-thumb.jpg" alt="image">
-            </a><br>
+         <p>I take photos of anything I can: of places, of things, & - most importantly - of the people that I love. This is a small collection of my favorite images; to see more, visit my <a href="">blog</a>. I have shot various events for <a href="">The University of Pennsylvania</a> & its affiliated organizations, & my work has also been featured in <a href="http://stampedmag.com">Stamped Magazine</a> & <a href="http://afterglobemag.com">Afterglobe Magazine</a>. I am available for hire in either Singapore or Philadelphia. <br><br>
+            <a href="mailto:carolim@sas.upenn.edu">Contact me regarding freelance work.<br><br></a></p>
 
-            <a href="img/photos/people/people-4.jpg" class="swipebox">
-            <img src="img/photos/people/people-4-thumb.jpg" alt="image">
-            </a>
-
-            <a href="img/photos/people/people-5.jpg" class="swipebox">
-            <img src="img/photos/people/people-5-thumb.jpg" alt="image">
-            </a>
-
-
-
+            <img src="img/photos/img-2.jpg" width=65%><br><br><br>
+            <img src="img/photos/people/people-4.jpg" width=65%><br><br><br>
+            <img src="img/photos/img-3.jpg" width=65%><br><br><br>
+            <img src="img/photos/img-4.jpg" width=65%><br><br><br>
+            <img src="img/photos/img-5.jpg" width=65%><br><br><br>
+            <img src="img/photos/img-7.jpg" width=65%><br><br><br>
+            <img src="img/photos/img-6.jpg" width=65%>
         </div>
 
          <!-- ***************************   PROJECTS  *****************************--> 
-         <div id="projects">
+         <div id="projectwork">
          <a name="projects"></a>
+        
          __________________________________________________________
          <h1>Projects</h1>
-             <h2><a href="http://https://github.com/carolim/snake_game">Snake, Revisited</a></h2>
+             <h2><a href="http://github.com/carolim/snake_game">Snake, Revisited</a></h2>
              <p>A reimagined version of snake, built using the Java Swing Library.</p>
              <img src="img/projects/snake-1.png"><img src="img/projects/snake-2.png">
+             <br><br>
+             <a href="#">return to top</a> 
+            <br><br>
         </div>
+
 
 
          <!-- ***************************   OTHER STUFF  *****************************-->          
@@ -143,34 +143,8 @@
             $('.full-page').height(vph);
 
 
-            /*  
-             * swipebox JS
-             */
-
-
     });
         </script>
-
-    <script type="text/javascript">
-        ;( function( $ ) {
-
-            /* Basic Gallery */
-            $( '.swipebox' ).swipebox();
-            
-            /* Video */
-            $( '.swipebox-video' ).swipebox();
-
-            /* Dynamic Gallery */
-            $( '#gallery' ).click( function( e ) {
-                e.preventDefault();
-                $.swipebox( [
-                    { href : 'http://swipebox.csag.co/mages/image-1.jpg', title : 'My Caption' },
-                    { href : 'http://swipebox.csag.co/images/image-2.jpg', title : 'My Second Caption' }
-                ] );
-            } );
-
-        } )( jQuery );
-    </script>
 
 
     </body>

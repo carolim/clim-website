@@ -4,7 +4,7 @@ div.full-page {
 }
 
 
-#aboutme, #photography, #projects {
+#aboutme, #photography, #projectwork {
   margin-bottom: 90px;
   margin-top: 90px;
   padding-top: 100px;
@@ -54,7 +54,7 @@ div.full-page {
 }
 
 
-#aboutme h1, #photography h1, #projects h1 {
+#aboutme h1, #photography h1, #projectwork h1 {
   font-style: bold;
   letter-spacing: 2px;
   text-align: center;
@@ -65,6 +65,10 @@ div.full-page {
   top: 0;
   width: 100%;
 
+}
+
+#photo-align {
+    width:100%;
 }
 
 
@@ -78,4 +82,12 @@ a:link, a:visited, a:active {
 a:hover {
     background-color: #FFF;
     opacity: 0.5;
+}
+
+#social a:link, #social a:visited, #social a:active {
+    text-decoration: none;
+    border-bottom:2px solid #fff;
+    background-color:#fff;
+
+
 }
